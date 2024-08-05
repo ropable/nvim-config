@@ -44,7 +44,6 @@ return {
     require('mason-tool-installer').setup({
       -- Install these linters, formatters, debuggers automatically
       ensure_installed = {
-        'black',
         'debugpy',
         'flake8',
         'isort',
