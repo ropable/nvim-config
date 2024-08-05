@@ -9,7 +9,7 @@ return {
     require('lint').linters_by_ft = {
       python = {
         -- Uncomment whichever linters you prefer
-        -- 'flake8',
+        'flake8',
         -- 'mypy',
         -- 'pylint',
       }
