@@ -7,7 +7,12 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>wq", ":wq<CR>") -- save and quit
 keymap.set("n", "<leader>qq", ":q!<CR>") -- quit without saving
 keymap.set("n", "<leader>ww", ":w<CR>") -- save
+keymap.set("n", "<leader>wa", ":wa<CR>", {desc = "Write all"}) -- save all
 keymap.set("n", "gx", ":!open <c-r><c-a><CR>") -- open URL under cursor
+
+-- Map jk and kj to <Esc> (insert mode only)
+keymap.set("i", "jk", "<Esc>")
+keymap.set("i", "kj", "<Esc>")
 
 -- Split window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
