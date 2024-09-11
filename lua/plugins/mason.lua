@@ -3,10 +3,11 @@ return {
   "williamboman/mason.nvim",
   opts = {
     ensure_installed = {
+      "flake8",
+      "ruff",
       "stylua",
       "shellcheck",
       "shfmt",
-      "flake8",
     },
   },
 }
