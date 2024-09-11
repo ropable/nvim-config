@@ -66,7 +66,7 @@ return {
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
-        { name = "path" },
+        -- { name = "path" },
       }, {
         -- { name = "buffer" },
         -- Configure the buffer source to use all buffers
@@ -79,7 +79,6 @@ return {
             end,
           },
         },
-        { name = "path" },
       }),
       formatting = {
         format = function(entry, item)
