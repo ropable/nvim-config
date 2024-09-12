@@ -1,4 +1,3 @@
--- change some telescope options and a keymap to browse plugin files
 return {
   "nvim-telescope/telescope.nvim",
   keys = {
@@ -10,7 +9,6 @@ return {
       desc = "Find Plugin File",
     },
   },
-  -- change some options
   opts = {
     defaults = {
       layout_strategy = "horizontal",
