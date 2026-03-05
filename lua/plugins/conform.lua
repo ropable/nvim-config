@@ -8,7 +8,8 @@ return {
     formatters_by_ft = {
       css = { "prettier" },
       htmldjango = { "djlint" },
-      html = { "prettier" },
+      html = { "tidy" },
+      -- html = { "prettier" },
       javascript = { "prettier" },
       lua = { "stylua" },
       markdown = { "prettier" },

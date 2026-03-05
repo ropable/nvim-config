@@ -1,13 +1,20 @@
 -- https://github.com/LazyVim/LazyVim/discussions/4094#discussioncomment-10178217
-local HOME = os.getenv("HOME")
+-- local HOME = os.getenv("HOME")
 return {
   "mfussenegger/nvim-lint",
   optional = true,
   opts = {
-    linters = {
-      ["markdownlint-cli2"] = {
-        args = { "--config", HOME .. "/.markdownlint-cli2.yaml", "--" },
-      },
+    linters_by_ft = {
+      markdown = { "vale", "markdownlint" },
+      python = { "ruff" },
+      javascript = { "prettier", "eslint" },
+      html = { "tidy" },
+      dockerfile = { "hadolint" },
     },
+    -- linters = {
+    --   ["markdownlint-cli2"] = {
+    --     args = { "--config", HOME .. "/.markdownlint-cli2.yaml", "--" },
+    --   },
+    -- },
   },
 }
