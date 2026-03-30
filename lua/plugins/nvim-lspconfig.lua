@@ -2,9 +2,11 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      -- Add pyright to lspconfig
-      -- pyright will be automatically installed with mason and loaded with lspconfig
-      pyright = {},
+      ty = {
+        cmd = { "ty", "server" },
+        filetypes = { "python" },
+        root_markers = { "ty.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git" },
+      },
       jsonls = {
         -- lazy-load schemastore when needed
         on_new_config = function(new_config)
