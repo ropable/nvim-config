@@ -5,7 +5,7 @@ return {
   optional = true,
   opts = {
     linters_by_ft = {
-      markdown = { "vale", "markdownlint" },
+      markdown = { "markdownlint" },
       python = { "ruff" },
       javascript = { "prettier", "eslint" },
       html = { "tidy" },
