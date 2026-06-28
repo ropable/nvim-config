@@ -7,8 +7,8 @@ return {
     linters_by_ft = {
       markdown = { "markdownlint" },
       python = { "ruff" },
-      javascript = { "prettier", "eslint" },
-      html = { "tidy" },
+      javascript = { "prettier" },
+      html = { "prettier" },
       dockerfile = { "hadolint" },
     },
     -- linters = {

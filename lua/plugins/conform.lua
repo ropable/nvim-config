@@ -1,19 +1,22 @@
 return {
   "stevearc/conform.nvim",
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     default_format_opts = {
+      lsp_fallback = true,
+      async = false,
       -- Allow formatters 10 seconds to work.
       timeout_ms = 10000,
     },
     formatters_by_ft = {
       css = { "prettier" },
       htmldjango = { "djlint" },
-      html = { "tidy" },
-      -- html = { "prettier" },
+      html = { "djlint" },
       javascript = { "prettier" },
       lua = { "stylua" },
-      markdown = { "prettier" },
+      -- markdown = { "prettier" },
       python = { "isort", "ruff_fix", "ruff_format" },
+      sql = { "sqlfluff" },
     },
   },
 }
