@@ -15,6 +15,8 @@ return {
         "shfmt",
         "sqlfluff",
         "hadolint",
+        "twigcs",
+        "twig-cs-fixer",
       },
     },
   },

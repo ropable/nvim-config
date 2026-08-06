@@ -29,6 +29,9 @@ return {
           format = auto_format,
         },
       },
+      twiggy_language_server = {
+        enabled = true,
+      },
     },
 
     setup = {

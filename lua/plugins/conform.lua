@@ -17,6 +17,7 @@ return {
       -- markdown = { "prettier" },
       python = { "isort", "ruff_fix", "ruff_format" },
       sql = { "sqlfluff" },
+      twig = { "twig-cs-fixer" },
     },
   },
 }

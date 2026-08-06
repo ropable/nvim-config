@@ -5,6 +5,7 @@ return {
     -- https://www.lazyvim.org/plugins/treesitter
     ensure_installed = {
       "htmldjango",
+      "twig",
     },
   },
 }

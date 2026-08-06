@@ -10,6 +10,7 @@ return {
       javascript = { "prettier" },
       html = { "prettier" },
       dockerfile = { "hadolint" },
+      twig = { "twigcs" },
     },
     -- linters = {
     --   ["markdownlint-cli2"] = {
